@@ -103,6 +103,26 @@ margin-left: 90px;
   margin-top: 200px;
 }
 
+/* logo */
+
+.logos{
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  border-image:  linear-gradient( rgb(255, 102, 0),rgb(243, 61, 91));
+  border-image-slice: 1;
+  
+}
+
+.logo{
+  margin: 30px;
+ 
+}
+
 /* influencer-products */
 
 section>article .influencer-products{
@@ -276,9 +296,12 @@ footer{
 
 @media (max-width: 480px){
   
-  header, .influencer-products, .oneinflunencerlife, .footer{
+  header, .influencer-products, .oneinflunencerlife, .transition{
     flex-direction: column;
-    text-decoration: center;
+    text-align: center;
+  }
+  .footer{
+    text-align: left;
   }
   
 }
@@ -291,8 +314,11 @@ footer{
 
 @media (max-width: 768px){
   
-  header, .influencer-products, .oneinflunencerlife, .footer{
+  header, .influencer-products, .oneinflunencerlife, .transition{
     background-color: rgb(235, 232, 232);
+  }
+  .footer{
+    text-align: left;
   }
   
 }
