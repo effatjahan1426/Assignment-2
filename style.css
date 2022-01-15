@@ -296,11 +296,11 @@ footer{
 
 @media (max-width: 480px){
   
-  header, .influencer-products, .oneinflunencerlife, .transition{
+  header, .logos .influencer-products, .oneinflunencerlife, .transition{
     flex-direction: column;
-    text-align: center;
+    
   }
-  .footer{
+  h1, .footer{
     text-align: left;
   }
   
@@ -314,7 +314,7 @@ footer{
 
 @media (max-width: 768px){
   
-  header, .influencer-products, .oneinflunencerlife, .transition{
+  header, .logos, .influencer-products, .oneinflunencerlife, .transition{
     background-color: rgb(235, 232, 232);
   }
   .footer{
