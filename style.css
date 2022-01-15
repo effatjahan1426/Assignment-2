@@ -1,0 +1,310 @@
+*{
+  box-sizing: border-box;
+}
+ html{
+   width: 100%;
+   height: 100%;
+ }
+
+body{
+ 
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin: 0;
+}
+
+ 
+
+
+section> nav >ul{
+  display: flex;
+  position: static;
+  font-size: 25px;
+  margin-top:100px;
+  margin-left: 100px;
+}
+
+
+nav li{
+  list-style: none;
+  margin-right: 70px;
+  
+
+  
+}
+
+nav li:hover{
+  background-color: rgb(238, 232, 232);
+}
+
+nav li a {
+  text-decoration: none;
+  color: rgb(226, 43, 43);
+}
+
+
+nav > ul > li:hover > ul{
+   display: block;
+  
+}  
+
+/* first article of section*/
+  
+ article> .influencerintro{
+  display: flex;
+  margin:0 50px;
+}
+
+.intro{
+  width: 50%;
+
+}
+
+.intro h1{
+  margin-top: 200px;
+  margin-left: 50px;
+  font-size: 40px;
+  text-align: left;
+  
+}
+
+.intro img{
+margin-left: 90px;
+  margin-top: 100px;
+}
+
+.intro p{
+  font-size: 23px;
+  margin-left: 50px;
+ 
+}
+
+.intro .button {
+  text-decoration: none;
+ color: white;
+ font-weight: bold;
+  background-color: rgb(247, 121, 142);
+   padding: 10px 25px ; 
+   border-radius: 30px; 
+   float: left; 
+   margin: 40px; 
+}
+
+/* hover button on mouse */
+.intro .button:hover{
+  background-color: rgb(216, 0, 0);
+}
+
+ h1{
+  font-size: 43px;
+  text-align: center;
+  margin-top: 200px;
+}
+
+/* influencer-products */
+
+section>article .influencer-products{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ 
+}
+.products{
+  font-size: 2em;
+  width: 350px;
+  height: 500px;
+  margin:40px;
+  box-shadow: 1px 5px 20px grey;
+  border-radius: 10px;
+}
+
+.products img{
+  width: 330px;
+  height: 200px;
+  margin: 10px 10px 0 10px ;
+  border-radius:10px ;
+
+}
+
+.products h4,h5{
+  margin-left: 20px;
+}
+.products p{
+  font-size: 18px;
+  margin-left: 20px;
+}
+ .rating{
+   font-size: 15px;
+   color: indianred;
+   margin-left: 20px;
+   margin-top: 0;
+ }
+
+
+ .products:hover{
+  background-color: rgb(248, 219, 219);
+}
+
+article .button{
+  float: right;
+  margin-right: 150px;
+  background-color: transparent;
+  color: indianred;
+  font-size: 25px;
+}
+
+
+
+
+article> .oneinflunencerlife{
+  display: flex;
+  margin: 150px 200px;
+  text-align: justify;
+}
+ .david{
+  width: 50%;
+  
+}
+
+.david h3{
+   font-size: 40px;
+   text-align: left;
+}
+
+.david p{
+   text-align: justify;
+   font-size: 23px;
+  
+}
+
+.david img{
+  width:70%;
+  border-radius: 20px;
+}
+
+
+.david> .button{
+  background-color: rgb(247, 121, 142);
+  height: 40px;
+  float: left;
+  border-radius: 0%;
+  padding: 10px 5px 0;
+  
+}
+
+.david> a{
+  text-decoration: none;
+  color :white;
+  font-size: 20px;
+
+}
+
+/*extra task transition */
+
+.transition{
+  display: flex;
+  margin: 0 200px;
+  text-align: justify;
+}
+
+.transitiondiv{
+  width: 50%;
+  box-shadow: 1px 5px 20px rgb(75, 74, 74);
+  margin: 100px;
+  height: 600px;
+  transition-property:width height ;
+transition-duration: 0.5s;
+transition-delay: 0.1s;
+    transition: transform ease;
+}
+
+.transitiondiv img{
+  width: 70%;
+  margin: 50px;
+}
+
+.transitiondiv p,h4{
+  margin: 20px;
+
+
+}
+
+.transitiondiv:hover{
+width: 51%;
+height: 601px;
+color: grey;
+
+}
+
+
+
+/*footer*/
+
+footer{
+ 
+	color :black;
+	text-align: center;
+  margin-top: 150px;
+	background-color: rgb(247, 121, 142);
+	padding-top: 40px;
+  padding-bottom: 40px;
+  
+}
+
+.footer a{
+  text-decoration: none;
+  height: 100px;   
+  size: 50px;
+}
+.footer p{
+   font-size: 20px;
+
+}
+
+.footer .fab{
+  color: #444; 
+}
+.footer .fas{
+  color: #444; 
+}
+
+/* for mobile device */
+
+@media (max-width: 480px){
+  
+  header, .influencer-products, .oneinflunencerlife, .footer{
+    flex-direction: column;
+    text-decoration: center;
+  }
+  
+}
+
+
+
+/* for tablets */
+
+
+
+@media (max-width: 768px){
+  
+  header, .influencer-products, .oneinflunencerlife, .footer{
+    background-color: rgb(235, 232, 232);
+  }
+  
+}
+
+@media (min-width: 481px){
+  
+  header, .influencer-products, .oneinflunencerlife, .footer{
+   
+    text-decoration: center;
+  }
+  
+}
+
+
+
